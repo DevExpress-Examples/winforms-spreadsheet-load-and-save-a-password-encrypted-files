@@ -1,5 +1,7 @@
-﻿Namespace EncryptionExample
-    Partial Public Class Form1
+Namespace EncryptionExample
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,20 +12,20 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EncryptionExample.Form1))
             Me.spreadsheetControl1 = New DevExpress.XtraSpreadsheet.SpreadsheetControl()
             Me.ribbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
             Me.spreadsheetCommandBarButtonItem1 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
@@ -54,13 +56,13 @@
             Me.splitterControl1 = New DevExpress.XtraEditors.SplitterControl()
             Me.spreadsheetBarController1 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController()
             Me.barCheckSubscribeEvent = New DevExpress.XtraBars.BarCheckItem()
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemComboBoxEncType, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.spreadsheetNameBoxControl1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.splitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemComboBoxEncType), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemTextEdit1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.spreadsheetNameBoxControl1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.splitContainerControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.splitContainerControl1.SuspendLayout()
-            DirectCast(Me.spreadsheetBarController1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.spreadsheetBarController1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' spreadsheetControl1
@@ -77,12 +79,12 @@
             ' 
             Me.ribbonControl1.AutoSizeItems = True
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem, Me.spreadsheetCommandBarButtonItem1, Me.spreadsheetCommandBarButtonItem2, Me.spreadsheetCommandBarButtonItem3, Me.spreadsheetCommandBarButtonItem4, Me.spreadsheetCommandBarButtonItem5, Me.spreadsheetCommandBarButtonItem6, Me.spreadsheetCommandBarButtonItem7, Me.spreadsheetCommandBarButtonItem8, Me.spreadsheetCommandBarButtonItem9, Me.spreadsheetCommandBarButtonItem10, Me.spreadsheetCommandBarButtonItem11, Me.barBtnSetEncryptionTypePassword, Me.barEncryptionTypeComboBox, Me.barPasswordEdit, Me.barBtnLoadCorruptedFile, Me.barCheckSubscribeEvent})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.spreadsheetCommandBarButtonItem1, Me.spreadsheetCommandBarButtonItem2, Me.spreadsheetCommandBarButtonItem3, Me.spreadsheetCommandBarButtonItem4, Me.spreadsheetCommandBarButtonItem5, Me.spreadsheetCommandBarButtonItem6, Me.spreadsheetCommandBarButtonItem7, Me.spreadsheetCommandBarButtonItem8, Me.spreadsheetCommandBarButtonItem9, Me.spreadsheetCommandBarButtonItem10, Me.spreadsheetCommandBarButtonItem11, Me.barBtnSetEncryptionTypePassword, Me.barEncryptionTypeComboBox, Me.barPasswordEdit, Me.barBtnLoadCorruptedFile, Me.barCheckSubscribeEvent})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 17
             Me.ribbonControl1.Name = "ribbonControl1"
-            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage1, Me.fileRibbonPage1})
-            Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() { Me.repositoryItemComboBoxEncType, Me.repositoryItemTextEdit1})
+            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1, Me.fileRibbonPage1})
+            Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.repositoryItemComboBoxEncType, Me.repositoryItemTextEdit1})
             Me.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
             Me.ribbonControl1.Size = New System.Drawing.Size(784, 146)
             ' 
@@ -156,10 +158,11 @@
             ' 
             Me.barBtnSetEncryptionTypePassword.Caption = "Save File with Specified Encryption Type and Password"
             Me.barBtnSetEncryptionTypePassword.Id = 12
-            Me.barBtnSetEncryptionTypePassword.ImageOptions.Image = (DirectCast(resources.GetObject("barBtnSetEncryptionTypePassword.ImageOptions.Image"), System.Drawing.Image))
-            Me.barBtnSetEncryptionTypePassword.ImageOptions.LargeImage = (DirectCast(resources.GetObject("barBtnSetEncryptionTypePassword.ImageOptions.LargeImage"), System.Drawing.Image))
+            Me.barBtnSetEncryptionTypePassword.ImageOptions.Image = CType((resources.GetObject("barBtnSetEncryptionTypePassword.ImageOptions.Image")), System.Drawing.Image)
+            Me.barBtnSetEncryptionTypePassword.ImageOptions.LargeImage = CType((resources.GetObject("barBtnSetEncryptionTypePassword.ImageOptions.LargeImage")), System.Drawing.Image)
             Me.barBtnSetEncryptionTypePassword.Name = "barBtnSetEncryptionTypePassword"
             Me.barBtnSetEncryptionTypePassword.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+            AddHandler Me.barBtnSetEncryptionTypePassword.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.barBtnSetEncryptionTypeAndPassword_ItemClick)
             ' 
             ' barEncryptionTypeComboBox
             ' 
@@ -173,7 +176,7 @@
             ' repositoryItemComboBoxEncType
             ' 
             Me.repositoryItemComboBoxEncType.AutoHeight = False
-            Me.repositoryItemComboBoxEncType.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.repositoryItemComboBoxEncType.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemComboBoxEncType.Name = "repositoryItemComboBoxEncType"
             ' 
             ' barPasswordEdit
@@ -184,6 +187,7 @@
             Me.barPasswordEdit.Id = 14
             Me.barPasswordEdit.Name = "barPasswordEdit"
             Me.barPasswordEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+            AddHandler Me.barPasswordEdit.EditValueChanged, New System.EventHandler(AddressOf Me.barPasswordEdit_EditValueChanged)
             ' 
             ' repositoryItemTextEdit1
             ' 
@@ -194,14 +198,15 @@
             ' 
             Me.barBtnLoadCorruptedFile.Caption = "Load Corrupted File"
             Me.barBtnLoadCorruptedFile.Id = 15
-            Me.barBtnLoadCorruptedFile.ImageOptions.Image = (DirectCast(resources.GetObject("barBtnLoadCorruptedFile.ImageOptions.Image"), System.Drawing.Image))
-            Me.barBtnLoadCorruptedFile.ImageOptions.LargeImage = (DirectCast(resources.GetObject("barBtnLoadCorruptedFile.ImageOptions.LargeImage"), System.Drawing.Image))
+            Me.barBtnLoadCorruptedFile.ImageOptions.Image = CType((resources.GetObject("barBtnLoadCorruptedFile.ImageOptions.Image")), System.Drawing.Image)
+            Me.barBtnLoadCorruptedFile.ImageOptions.LargeImage = CType((resources.GetObject("barBtnLoadCorruptedFile.ImageOptions.LargeImage")), System.Drawing.Image)
             Me.barBtnLoadCorruptedFile.Name = "barBtnLoadCorruptedFile"
             Me.barBtnLoadCorruptedFile.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+            AddHandler Me.barBtnLoadCorruptedFile.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.barBtnLoadCorruptedFile_ItemClick)
             ' 
             ' ribbonPage1
             ' 
-            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.ribbonPageGroup1})
+            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1})
             Me.ribbonPage1.Name = "ribbonPage1"
             Me.ribbonPage1.Text = "Encryption"
             ' 
@@ -217,7 +222,7 @@
             ' 
             ' fileRibbonPage1
             ' 
-            Me.fileRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.commonRibbonPageGroup1, Me.infoRibbonPageGroup1})
+            Me.fileRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.commonRibbonPageGroup1, Me.infoRibbonPageGroup1})
             Me.fileRibbonPage1.Name = "fileRibbonPage1"
             ' 
             ' commonRibbonPageGroup1
@@ -256,8 +261,8 @@
             Me.spreadsheetNameBoxControl1.Location = New System.Drawing.Point(0, 0)
             Me.spreadsheetNameBoxControl1.MinimumSize = New System.Drawing.Size(0, 20)
             Me.spreadsheetNameBoxControl1.Name = "spreadsheetNameBoxControl1"
-            Me.spreadsheetNameBoxControl1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.spreadsheetNameBoxControl1.ReadOnly = DevExpress.Utils.DefaultBoolean.Default
+            Me.spreadsheetNameBoxControl1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.spreadsheetNameBoxControl1.[ReadOnly] = DevExpress.Utils.DefaultBoolean.[Default]
             Me.spreadsheetNameBoxControl1.Size = New System.Drawing.Size(145, 20)
             Me.spreadsheetNameBoxControl1.SpreadsheetControl = Me.spreadsheetControl1
             Me.spreadsheetNameBoxControl1.TabIndex = 0
@@ -307,6 +312,7 @@
             Me.barCheckSubscribeEvent.Checked = True
             Me.barCheckSubscribeEvent.Id = 16
             Me.barCheckSubscribeEvent.Name = "barCheckSubscribeEvent"
+            AddHandler Me.barCheckSubscribeEvent.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.barCheckSubscribeEvent_CheckedChanged)
             ' 
             ' Form1
             ' 
@@ -320,50 +326,77 @@
             Me.Name = "Form1"
             Me.Ribbon = Me.ribbonControl1
             Me.Text = "Encryption Example"
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemComboBoxEncType, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.spreadsheetNameBoxControl1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.splitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemComboBoxEncType), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemTextEdit1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.spreadsheetNameBoxControl1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.splitContainerControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.splitContainerControl1.ResumeLayout(False)
-            DirectCast(Me.spreadsheetBarController1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.spreadsheetBarController1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private spreadsheetControl1 As DevExpress.XtraSpreadsheet.SpreadsheetControl
+
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private spreadsheetCommandBarButtonItem1 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem2 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem3 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem4 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem5 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem6 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem7 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem8 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem9 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem10 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private spreadsheetCommandBarButtonItem11 As DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem
+
         Private fileRibbonPage1 As DevExpress.XtraSpreadsheet.UI.FileRibbonPage
+
         Private commonRibbonPageGroup1 As DevExpress.XtraSpreadsheet.UI.CommonRibbonPageGroup
+
         Private infoRibbonPageGroup1 As DevExpress.XtraSpreadsheet.UI.InfoRibbonPageGroup
+
         Private spreadsheetFormulaBarControl1 As DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl
+
         Private spreadsheetNameBoxControl1 As DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl
+
         Private splitContainerControl1 As DevExpress.XtraEditors.SplitContainerControl
+
         Private splitterControl1 As DevExpress.XtraEditors.SplitterControl
+
         Private spreadsheetBarController1 As DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController
-        Private WithEvents barBtnSetEncryptionTypePassword As DevExpress.XtraBars.BarButtonItem
+
+        Private barBtnSetEncryptionTypePassword As DevExpress.XtraBars.BarButtonItem
+
         Private ribbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
+
         Private ribbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+
         Private barEncryptionTypeComboBox As DevExpress.XtraBars.BarEditItem
-        Private WithEvents barPasswordEdit As DevExpress.XtraBars.BarEditItem
+
+        Private barPasswordEdit As DevExpress.XtraBars.BarEditItem
+
         Private repositoryItemTextEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
-        Private WithEvents barBtnLoadCorruptedFile As DevExpress.XtraBars.BarButtonItem
+
+        Private barBtnLoadCorruptedFile As DevExpress.XtraBars.BarButtonItem
+
         Private repositoryItemComboBoxEncType As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
-        Private WithEvents barCheckSubscribeEvent As DevExpress.XtraBars.BarCheckItem
+
+        Private barCheckSubscribeEvent As DevExpress.XtraBars.BarCheckItem
     End Class
 End Namespace
-
